@@ -81,7 +81,7 @@ $("#table").on("click", ".elem", function(event) {
 
 //store table when closing or refreshing tab
 $(window).on("unload", function(e) {
-    window.localStorage.myitems = table.innerHTML; //store
+    window.localStorage.rows = table.innerHTML; //store
 });
 
 // localStorage.clear();
@@ -108,7 +108,7 @@ $("input[name=grade]").on("keypress keyup blur",function (event) {
 
 //recovers table row data stored in local storage
 function getValues() {
-    var storedValues = window.localStorage.myitems;
+    var storedValues = window.localStorage.rows;
     var degreeGrade = window.localStorage.degree;
     if(storedValues) {
       table.innerHTML = storedValues;
