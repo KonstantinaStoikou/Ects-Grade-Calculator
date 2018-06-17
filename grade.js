@@ -57,7 +57,7 @@ $("#form").keypress(function(event) {
         else {
             $("input[name=grade]").removeClass("placeholder-color");
         }
-        if (grade > 10) {
+        if (grade > 10 || grade < 5) {
             $("input[name=grade]").addClass("input-color");
             return;
         }
