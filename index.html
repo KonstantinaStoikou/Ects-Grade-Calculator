@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grade Calculator</title>
+        <link rel="stylesheet" href="./grade.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script
+			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
+        <script defer type="text/javascript" src="./grade.js"></script>
+    </head>
+    <body>
+        <div class="container" id="table-container">
+            <form id="form">
+                <table id="table">
+                    <tr id="titles">
+                        <th>Course</th>
+                        <th>Ects</th>
+                        <th>Grade</th>
+                    </tr>
+
+                    <tr id="new-course">
+                        <td><input type="text" name="course" placeholder="add new course" ></td>
+                        <td><input type="text" name="ects" placeholder="ects"></td>
+                        <td><input type="text" name="grade" placeholder="grade"></td>
+                    </tr>
+                </table>
+            </form>
+
+            <button id="calculate-button">calculate</button>
+        </div>
+
+        <div class="container" id="result">
+            <p>degree grade <span id="grade"></span></p>
+
+        </div>
+    </body>
+</html>
