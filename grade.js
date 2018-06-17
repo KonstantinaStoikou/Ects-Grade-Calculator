@@ -84,7 +84,7 @@ $(window).on("unload", function(e) {
     window.localStorage.rows = table.innerHTML; //store
 });
 
-// localStorage.clear();
+localStorage.clear();
 getValues();
 
 //allow only integers for ects
